@@ -11,3 +11,250 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.whoweare {
+  display: flex;
+  width: 100%;
+}
+
+.left,
+.right {
+  width: 50%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.right {
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.left-img,
+.right-img {
+  width: 100%; /* Adjust to 100% width for responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust margin for spacing between images */
+  gap: 5px;
+}
+.left-img{
+  gap: 15px;
+}
+
+.right-img{
+  /* margin-left: -80px; */
+  margin-bottom: 80px;
+}
+
+.whoweare img {
+  height: 250px; /* Set height to auto for responsive images */
+
+}
+.red-img{
+  margin-bottom: 80px;
+}
+.img-1{
+  margin-bottom: -100px;
+}
+@media (max-width: 768px) {
+  .whoweare img {
+    height: 150px; /* Set height to auto for responsive images */
+  
+  }
+  /* .right-img{
+    margin-left: -20px;
+    margin-bottom: 80px;
+  } */
+}
+
+
+.textContainer {
+  flex: 1;
+  padding-right: 34%;
+  padding-left: 6%;
+}
+
+.heading {
+  font-weight: bolder;
+  font-size: 28px;
+  word-spacing: 3px;
+}
+.highlightHeading {
+  color: #ae2424;
+}
+
+.paragraph {
+  margin-top: 10px;
+}
+paragraph2 {
+  margin-top: 10px;
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Display images in a column */
+  align-items: flex-end; /* Align images to the right */
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Adjust the max height as needed */
+  margin-top: 10px; /* Add margin between images */
+}
+.LearnMoreButton {
+  background-color: #ae2424;
+  color: #f4f4f4;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textContainer {
+    padding-right: 0;
+    text-align: center;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .paragraph {
+    text-align: left;
+    font-size: small;
+  }
+  .paragraph2 {
+    text-align: left;
+    font-size: small;
+  }
+
+  .imageContainer img {
+    display: none;
+  }
+}
+.left{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ padding-bottom: 100px;
+}
+.right{
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .heading {
+    font-size: 20px;
+  }
+}
+
+.Services{
+  background-color: #f4f4f4;
+  padding: 3rem;
+}
+
+.ServiceCard{
+  border: 2px solid #ae2424;
+ width: 280px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #FAFCFF;
+}
+.ServiceHead{
+display: flex;
+gap: 15px;
+margin-top: 10px;
+}
+
+.ServiceLogo {
+  height: 30px;
+  width: 30px;
+  background-color: #ae2424;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.ServiceName{
+  font-size: 24px;
+  font-weight: bold;
+  color: #ae2424;
+}
+.ServiceParagraph{
+  margin-top: 15px;
+  color: #281900;
+}
+.ReadMore{
+  color: #ae2424;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ row-gap: 50px;
+ column-gap: 25px;
+}
+.ServiceHeading{
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+
+}
+
+
+
+
+@media (max-width: 1440px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px; 
+  }
+.ServiceCard{
+  width: auto;
+}
+}
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px; 
+  }
+.ServiceCard{
+  width: auto;
+}
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px; 
+  }
+  .Services{
+    padding: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 15px; 
+    row-gap: 20px;
+  }
+  .Services{
+    padding: 20px;
+  }
+  
+}

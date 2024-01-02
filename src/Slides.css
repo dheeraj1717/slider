@@ -1,0 +1,168 @@
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 60%;
+    padding: 20px;
+    /* background: #000; */
+  
+  }
+  @media (max-width: 1024px) {
+.swiper{
+  width: 90%;
+}
+  }
+  @media (max-width: 768px) {
+    .swiper{
+      width: 80%;
+    }
+  }
+  @media (max-width: 425px) {
+    .swiper{
+      width: 95%;
+    }
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+ .cardContainer{
+  display: flex;
+  gap: 25px;
+  
+ }
+  .BlogCard{
+    border: 2px solid #ae2424;
+    width: 280px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+  
+ /* margin-bottom: 40px; */
+  }
+ .BlogImage img{
+  height :180px;
+  width: 100%;
+  margin: 0 auto;
+
+  border-radius: 10px;
+
+
+ }
+ .BlogImage{
+ 
+  
+  position: relative;
+
+ }
+ .blogDate{
+  position: absolute;
+  bottom: -7%;
+  right: 2%;
+  color: #ae2424;
+  background-color: white;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 5px 15px;
+  z-index: 10;
+  border: 2px solid #ae2424;
+ }
+
+ .BlogTitle{
+  color: #ae2424;
+  font-weight: 700;
+ margin-top: 1rem;
+ text-align: left;
+
+  
+ }
+ .BlogParagraph{
+  text-align: left;
+  font-size: 14px;
+  margin-top: 5px;
+ }
+ .BlogReadMore{
+  color: #ae2424;
+  text-align: left;
+  font-size: 14px;
+font-weight: 500;
+margin: 5px 0;
+
+ }
+ .BlogType{
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #767676;
+  margin-top: 1rem;
+ }
+
+ /* Add this to your CSS or SCSS file */
+.swiper-pagination {
+margin-bottom: -10px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0 2px;
+  background-color: rgb(101, 101, 101); /* Change the color as needed */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ae2424; /* Change the color for the active bullet */
+}
+
+/* Show/hide navigation buttons based on screen width */
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+  color: #ae2424;
+  font-size: 20px;
+}
+@media screen and (max-width: 728px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+.swiper-button-next:after,.swiper-button-prev:after{
+  font-size: 25px;
+}
+
+.BlogHeading{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.Blog{
+  width: 100%;
+  background-color: #F4f4f4;
+  padding: 20px;
+
+}
